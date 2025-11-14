@@ -1,0 +1,36 @@
+
+{% extends 'main/base.html' %}
+{% load static %}
+{% block content %}
+<section class="hero" style="background-image: url('{% static 'main/images/WhatsApp Image 2025-11-10 at 09.16.55 (2).jpeg' %}');">
+  <div class="hero-inner container">
+    <h1>Falcon Inch Intelligences</h1>
+    <p class="lead">AI solutions that work — Machine Learning, Cloud, System Integration & Design</p>
+    <a class="cta" href="{% url 'services' %}">Our Services</a>
+  </div>
+</section>
+
+<section class="overview container">
+  <h2>Who we are</h2>
+  <p>Falcon Inch Intelligences is a forward-thinking AI & technology solutions company founded in 2024. We build AI systems, provide training, and deliver practical automation for businesses and learners.</p>
+</section>
+
+<section class="cards container">
+  <div class="card">
+    <h3>Machine Learning</h3>
+    <p>AI models & workflow automation.</p>
+  </div>
+  <div class="card">
+    <h3>Digital Design</h3>
+    <p>Web, databases and app design.</p>
+  </div>
+  <div class="card">
+    <h3>System Integration</h3>
+    <p>Custom software development.</p>
+  </div>
+  <div class="card">
+    <h3>Cloud Computing</h3>
+    <p>DB design, hosting, management.</p>
+  </div>
+</section>
+{% endblock %}

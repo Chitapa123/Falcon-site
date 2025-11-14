@@ -1,0 +1,23 @@
+
+{% extends 'main/base.html' %}
+{% load static %}
+
+{% block content %}
+<div class="container page contact-grid">
+  <div class="contact-card">
+    <h1>Contact Us</h1>
+    <p>Email: <a href="mailto:falconinch@gmail.com">falconinch@gmail.com</a></p>
+    <p>Phone: +263788822339</p>
+    <p>Address: 582, Highlands, Harare</p>
+    {% if pdf %}
+    <p><a href="{% static 'main/images/Falcon_Inch_Intelligences_About_Us (1).pdf' %}" download>Download About PDF</a></p>
+    {% endif %}
+  </div>
+  <form class="contact-form" method="post" action="#">
+    <label>Name<input type="text" name="name" /></label>
+    <label>Email<input type="email" name="email" /></label>
+    <label>Message<textarea name="message"></textarea></label>
+    <button class="btn" type="submit">Send</button>
+  </form>
+</div>
+{% endblock %}
